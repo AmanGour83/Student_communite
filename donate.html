@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Student Community</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <h1>Student Community</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="community.html">Community</a>
+    <a href="donate.html">Donate</a>
+    <a href="certificate.html">Certificate</a>
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
+
+
+  <section class="donation-container">
+    <div class="donation-box">
+      <h2>Support the Community 💙</h2>
+      <p>Your contribution helps keep learning free and accessible for all students.</p>
+      
+      <form id="donationForm">
+        <label>Enter Amount (₹)</label>
+        <input type="number" id="amount" placeholder="Min ₹1" min="1" required>
+        
+        <label>Select Payment Method</label>
+        <select id="payment-method" required>
+          <option value="" disabled selected>Choose</option>
+          <option value="upi">UPI</option>
+          <option value="card">Credit/Debit Card</option>
+          <option value="netbanking">Net Banking</option>
+        </select>
+        
+        <button type="submit" class="btn">Donate Now</button>
+      </form>
+      
+      <p class="thank-msg" id="thankMsg"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Student Community | Empowering Learning Together</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

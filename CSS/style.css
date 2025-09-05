@@ -1,0 +1,461 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #1e90ff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #1e90ff, #00c6ff);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #ffd700;
+  color: #333;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffcc00;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.step {
+  text-align: center;
+  max-width: 250px;
+  margin: 20px;
+}
+
+.step h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #1e90ff;
+}
+
+.step p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Auth Pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f9f9f9;
+}
+
+.auth-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: #1e90ff;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-box input, 
+.auth-box select {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.auth-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-box a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  min-height: 80vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1e90ff;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.subjects {
+  margin-top: 20px;
+}
+
+.subject-btn {
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subject-btn:hover {
+  background: #005bbb;
+}
+
+.requests {
+  margin: 15px 0;
+}
+
+.requests li {
+  margin: 8px 0;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Donation Page */
+.donation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f9f9f9;
+}
+
+.donation-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.donation-box h2 {
+  margin-bottom: 15px;
+  color: #1e90ff;
+}
+
+.donation-box p {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.donation-box form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.donation-box label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.donation-box input,
+.donation-box select {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.thank-msg {
+  margin-top: 20px;
+  font-size: 15px;
+  color: green;
+  font-weight: 500;
+}
+
+/* Community Page */
+.community-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.community-container h2 {
+  margin-bottom: 30px;
+  color: #1e90ff;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.subject-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px;
+  text-align: center;
+}
+
+.subject-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subject-card p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.join-msg {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: green;
+}
+
+/* Certificate Page */
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f9f9f9;
+}
+
+.certificate-box {
+  text-align: center;
+}
+
+.certificate-box h2 {
+  margin-bottom: 20px;
+  color: #1e90ff;
+}
+
+.certificate {
+  background: #fff;
+  border: 2px solid #1e90ff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.certificate h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.certificate .student-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #1e90ff;
+}
+
+.certificate .date {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.certificate .signature {
+  margin-top: 30px;
+  font-size: 14px;
+  font-style: italic;
+  color: #333;
+}
+
+/* Profile Page */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-card .profile-pic {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Reviews Page */
+.reviews-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.review-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.review-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.reviews-list {
+  margin-top: 40px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

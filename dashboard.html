@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Student Community</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <h1>Student Community</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="community.html">Community</a>
+    <a href="donate.html">Donate</a>
+    <a href="certificate.html">Certificate</a>
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
+
+
+  <section class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="#" onclick="showSection('learner')">Learner View</a></li>
+        <li><a href="#" onclick="showSection('teacher')">Teacher View</a></li>
+        <li><a href="#" onclick="showSection('profile')">Profile</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Learner Section -->
+      <div id="learner" class="section active">
+        <h2>Ask a Doubt</h2>
+        <p>Select a subject to connect with available teacher-students.</p>
+        <div class="subjects">
+          <button class="subject-btn">Mathematics</button>
+          <button class="subject-btn">Physics</button>
+          <button class="subject-btn">Chemistry</button>
+          <button class="subject-btn">Computer Science</button>
+          <button class="subject-btn">Cyber Security</button>
+        </div>
+      </div>
+
+      <!-- Teacher Section -->
+      <div id="teacher" class="section">
+        <h2>Teacher Dashboard</h2>
+        <label><input type="checkbox"> Mark as Available</label>
+        <h3>Incoming Doubt Requests:</h3>
+        <ul class="requests">
+          <li>Math Doubt - <button class="btn">Join</button></li>
+          <li>Cyber Security Doubt - <button class="btn">Join</button></li>
+        </ul>
+        <h3>Your Ratings</h3>
+        <p>⭐ 4.5 (based on 120 reviews)</p>
+        <h3>Certificate Progress</h3>
+        <progress value="70" max="100"></progress> 70%
+      </div>
+
+      <!-- Profile Section -->
+      <div id="profile" class="section">
+        <h2>My Profile</h2>
+        <p><b>Name:</b> Aman Gour</p>
+        <p><b>Role:</b> Learner & Teacher</p>
+        <p><b>Doubts Asked:</b> 12</p>
+        <p><b>Doubts Solved:</b> 8</p>
+        <p><b>Certificate Status:</b> In Progress</p>
+      </div>
+    </main>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Student Community | Empowering Learning Together</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
